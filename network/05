@@ -1,0 +1,1 @@
+nslookup slash16.org | grep Address | sed -e 's/Address://g' | awk '{$1=$1};1' | sed 1d
