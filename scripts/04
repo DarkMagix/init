@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 MD5SUM='cat /root/crontabsum'
 NEWSUM='md5sum /etc/crontab | cut -d " " -f 1'
@@ -9,4 +9,6 @@ then
 	mail -s "The file crontab was modified" root@localhost.com < /etc/crontab
 fi
 
-# 0 0	0 * 0-6 root sh /root/crontab_check.sh
+echo '0 0 1 * * root sh /root/Desktop/init/04' | crontab
+
+crontab -l
