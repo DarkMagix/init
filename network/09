@@ -1,1 +1,2 @@
+#!/bin/bash
 nslookup 42.fr
