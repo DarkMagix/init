@@ -1,1 +1,1 @@
-/sbin/iptables -A INPUT -j REJECT
+sudo /sbin/iptables -A INPUT -j REJECT
